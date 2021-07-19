@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="main_1.css">
+<link rel="stylesheet" type="text/css" href="main.js">
+
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<nav>
+  <div class="topnav">
+    <a href="#"><h1 class="logo">Breeze </h1></a>
+    <ul>
+    <div id="myLinks">
+      <li><a href="#">News</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">News</a></li>
+    </div>
+  </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+</nav>
+
+
+<!-- End smartphone / tablet look -->
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+</body>
+</html>
