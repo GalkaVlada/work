@@ -8,41 +8,70 @@
 
 </head>
 <body>
+  <h1>Breeze</h1>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
 
-<!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
+  <div id="menuToggle">
 
-<!-- Top Navigation Menu -->
-<nav>
-  <div class="topnav">
-    <a href="#"><h1 class="logo">Breeze </h1></a>
-    <ul>
-    <div id="myLinks">
-      <li><a href="#">News</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">News</a></li>
-    </div>
-  </ul>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
-</nav>
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" value="Click" onmousedown="viewDiv()" />
+    
 
-
-<!-- End smartphone / tablet look -->
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    
+    <div id="div1">
+    <ul id="menu">
+      <a href="#"><li>Курс по ЗНО 2022</li></a>
+      <a href="#"><li>Как проходят занятия</li></a>
+      <a href="#"><li>Как проходят работа кураторов курса</li></a>
+      <a href="#"><li>Какие материалы я использую</li></a>
+      <a href="#"><li>Книги и таблицы</li></a>
+      <a href="#"><li>Шпоры</li></a>
+      <a href="#"><li>Отзывы</li></a>
+    </ul>
+      <div class="social_media">
+<div class="telegtam">
+ <img src="instagram.png" class="Inst">
 </div>
+<div class="facebook"></div>
+<div class="WK"></div>
+<div class="Inst"></div>
+
+</div>
+
+
+
+
+   
+  </div>
+</nav>
 <script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  </script>
+if (document.getElementById("div1").style.display == 'block') { 
+  document.getElementById("div1").style.display = "none";
+}
+else {
+ document.getElementById("div1").style.display = "block";
+}
+</script>
 
 </body>
 </html>
